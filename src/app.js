@@ -5,7 +5,7 @@ const path = require('path');
 const morgan = require('morgan');
 
 // CONFIGURACIONES
-app.set('port', 3000); // PUERTO
+app.set('port', process.env.PORT || 3003); // PUERTO
 app.set('views', path.join(__dirname, 'views')); // VISTAS
 app.set('view engine', 'ejs'); // ESTABLECER EL MOTOR DE PLANTILLA
 
